@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+Dockerfile
+.git
+trivy-results.txt
+README.md

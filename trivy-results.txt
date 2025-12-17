@@ -1,0 +1,27 @@
+2025-12-17T14:30:00.000Z	INFO	Vulnerability scanning is enabled
+2025-12-17T14:30:02.000Z	INFO	Detected OS: alpine
+2025-12-17T14:30:02.000Z	INFO	Detecting Alpine vulnerabilities...
+2025-12-17T14:30:02.000Z	INFO	Number of language-specific files: 1
+2025-12-17T14:30:02.000Z	INFO	Detecting node-pkg vulnerabilities...
+
+secure-node-app (alpine 3.17.0)
+===============================
+Total: 4 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 2, CRITICAL: 1)
+
+┌─────────────┬────────────────┬──────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│   Library   │ Vulnerability  │ Severity │ Installed Version │ Fixed Version │                            Title                             │
+├─────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libbz2      │ CVE-2019-12900 │ CRITICAL │ 1.0.6-r6          │ 1.0.6-r7      │ bzip2: Data integrity error when decompressing               │
+│             │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-12900                   │
+├─────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libcrypto1.1│ CVE-2022-0778  │ HIGH     │ 1.1.1l-r0         │ 1.1.1n-r0     │ openssl: Infinite loop in BN_mod_sqrt() reachable when       │
+│             │                │          │                   │               │ parsing certificates                                         │
+│             │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-0778                    │
+├─────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libssl1.1   │ CVE-2022-0778  │ HIGH     │ 1.1.1l-r0         │ 1.1.1n-r0     │ openssl: Infinite loop in BN_mod_sqrt() reachable when       │
+│             │                │          │                   │               │ parsing certificates                                         │
+│             │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-0778                    │
+├─────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ zlib        │ CVE-2018-25032 │ MEDIUM   │ 1.2.11-r3         │ 1.2.12-r0     │ zlib: A flaw found in zlib when compressing data             │
+│             │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2018-25032                   │
+└─────────────┴────────────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
