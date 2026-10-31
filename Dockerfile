@@ -1,6 +1,6 @@
 # 1. Use a minimal base image to reduce attack surface
 # Using Alpine reduces image size and removes unnecessary tools
-FROM node:18-alpine
+FROM node:26.5.0-alpine
 
 # 2. Set working directory
 WORKDIR /app
